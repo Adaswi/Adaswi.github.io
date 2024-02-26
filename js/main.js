@@ -1,4 +1,4 @@
-const PATH = 'service-worker.js';
+const PATH = 'js/service-worker.js';
         let isServiceWorkersSupport = ('serviceWorker' in navigator);
         if (isServiceWorkersSupport) {
          console.log('Will service worker register?');
