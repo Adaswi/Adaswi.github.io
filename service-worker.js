@@ -11,7 +11,7 @@ self.addEventListener('install', function (evt) {
         caches.open(CACHE_NAME).then(function (cache) {
             return cache.addAll(filesToCache);
         }).catch(function (err) {
-            //console.error(err);
+            console.error(err);
         })
     );
 });
