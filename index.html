@@ -12,9 +12,12 @@
 
 <body>
     <p><button onclick="getStream()">Grab video</button></p>
-    <p><video autoplay style="height: 460px; width: 720px;"></video></p>
+    <div id="parent">
+        <p><video autoplay style="height: 480px; width: 720px;"></video></p>
+        <p><img id="overlay" src="./images/overlay.png" width="840" height="540"></p>
+    </div>
     <p><button onclick="takePhoto()">Take Photo!</button></p>
-    <p><img id="imageTag" width="720" height="460"></p>
+    <p><img id="imageTag" width="720" height="480"></p>
     <p id="status"></p>
     <script src="js/main.js"></script>
 </body>
