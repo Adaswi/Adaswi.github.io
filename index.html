@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="manifest" href="manifest.json" />
     <title>Document</title>
-    
+
 </head>
+
 <body>
-    <p>Hello world!</p>
+    <p><button onclick="getStream()">Grab video</button></p>
+    <p><video autoplay style="height: 180px; width: 240px;"></video></p>
+    <p><button onclick="takePhoto()">Take Photo!</button></p>
+    <p><img id="imageTag" width="240" height="180"></p>
     <p id="status"></p>
     <script src="js/main.js"></script>
 </body>
+
 </html>
